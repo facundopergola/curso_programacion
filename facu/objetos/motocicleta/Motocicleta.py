@@ -72,6 +72,16 @@ class Motocicleta():
             print("Las luces estan encendidas")
         else:
             print("las luces estan apagadas")
+            
+    def set_luces(self, luces): #Private
+        self.luces = luces
+        
+    def apagar_luces(self):
+        self.set_luces(False)
+        
+    def encender_luces(self): #public
+        self.set_luces(True)
+
 
 
 motocicleta_yamaha_1 = Motocicleta(

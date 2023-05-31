@@ -1,5 +1,5 @@
 class CarritoDeComida():
-	def __init(self, name, modelo, ruedas ,publicidad):
+	def __init__(self, name, modelo, ruedas ,publicidad):
 		self.name = name
 		self.modelo = modelo
 		self.ruedas = ruedas
@@ -16,3 +16,12 @@ class CarritoDeComida():
 
 	def get_publicidad(self):
 		return self.publicidad
+
+
+carrito1 = CarritoDeComida(name="Elpancholoco",
+			    modelo="Furgon",
+			    ruedas=4,
+			     publicidad="Los mejores Panchos Del condado!")
+
+print(carrito1.get_name())
+print(carrito1.get_modelo())
