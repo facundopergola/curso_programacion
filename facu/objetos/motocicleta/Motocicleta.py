@@ -5,6 +5,7 @@ class Motocicleta():
     motor = False
     numero_ruedas = 2
     capacidad_tanque = 40
+    luces = False
 
  
     # metodo constructor
@@ -66,7 +67,13 @@ class Motocicleta():
         else:
             print("La motocicleta NO esta encendida")
 
-    
+    def get_luces(self):
+        if self.luces == True:
+            print("Las luces estan encendidas")
+        else:
+            print("las luces estan apagadas")
+
+
 motocicleta_yamaha_1 = Motocicleta(
 matricula="6432-YHUZ",
 combustible=3,
